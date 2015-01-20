@@ -1774,3 +1774,14 @@ div.sharedaddy h3,
 @media only screen and (min-width: 768px) { body:after { content: "768 to 1023px"; background-color: hsla(270,60%,40%,0.7); } }
 @media only screen and (min-width: 1024px) { body:after { content: "1024 to 1299px"; background-color: hsla(360,60%,40%,0.7); } }
 @media only screen and (min-width: 1300px) { body:after { content: "1300 and up"; background-color: hsla(60,60%,40%,0.7); } }*/
+
+
+/* =Hide Sidebar wigdets that won't work on gh-pages
+-------------------------------------------------------------- */
+
+a.rss-link,
+#blog_subscription-2,
+#search-2,
+#mailchimpsf_widget-2 {
+  display: none;
+}
