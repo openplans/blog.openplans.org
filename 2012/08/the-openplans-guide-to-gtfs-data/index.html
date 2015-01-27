@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en-US" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en-US" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-US" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-US" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-US"> <!--<![endif]-->
+
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+<title>The OpenPlans Guide to GTFS Data | OpenPlans</title>
+  <meta name="description" content="OpenPlans is on a mission to make planning more open, more efficient, and more fun. We do this by creating online tools to gather public input and share information, working with progressive cities and forward-thinking planners. ">
+  <meta name="author" content="">
+  <!--  Mobile Viewport Fix -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!-- Favicon & Progressively-Enhanced Touch Icons: http://mathiasbynens.be/notes/touch-icons#sizes -->
+  <link rel="shortcut icon" href="http://blog.openplans.org/wp-content/themes/openplans-website/images/favicon.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="http://blog.openplans.org/wp-content/themes/openplans-website/images/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="http://blog.openplans.org/wp-content/themes/openplans-website/images/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="http://blog.openplans.org/wp-content/themes/openplans-website/images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" href="http://blog.openplans.org/wp-content/themes/openplans-website/images/apple-touch-icon.png">
+
+  <link rel="profile" href="http://gmpg.org/xfn/11" />
+  <link rel="stylesheet" href="http://blog.openplans.org/wp-content/themes/openplans-website/style.css?1391818395" type="text/css" media="screen, projection" />
+
+  <!-- Google Webfonts -->
+  <link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  <link rel="pingback" href="http://blog.openplans.org/xmlrpc.php" />
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->
+
+  <link rel="alternate" type="application/rss+xml" title="OpenPlans &raquo; Feed" href="http://blog.openplans.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="OpenPlans &raquo; Comments Feed" href="http://blog.openplans.org/comments/feed/" />
+
+            <script type="text/javascript">//<![CDATA[
+            // Google Analytics for WordPress by Yoast v4.3.5 | http://yoast.com/wordpress/google-analytics/
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-7756992-1']);
+				            _gaq.push(['_trackPageview']);
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+            //]]></script>
+			<link rel='stylesheet' id='flick-css'  href='http://blog.openplans.org/wp-content/plugins/mailchimp//css/flick/flick.css?ver=4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='mailchimpSF_main_css-css'  href='http://blog.openplans.org/?mcsf_action=main_css&#038;ver=4.1' type='text/css' media='all' />
+<!--[if IE]>
+<link rel='stylesheet' id='mailchimpSF_ie_css-css'  href='http://blog.openplans.org/wp-content/plugins/mailchimp/css/ie.css?ver=4.1' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='jetpack-subscriptions-css'  href='http://blog.openplans.org/wp-content/plugins/jetpack/modules/subscriptions/subscriptions.css?ver=4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack-widgets-css'  href='http://blog.openplans.org/wp-content/plugins/jetpack/modules/widgets/widgets.css?ver=20121003' type='text/css' media='all' />
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js?ver=4.1'></script>
+<script type='text/javascript' src='http://blog.openplans.org/wp-content/plugins/mailchimp/js/scrollTo.js?ver=1.4.1'></script>
+<script type='text/javascript' src='http://blog.openplans.org/wp-includes/js/jquery/jquery.form.min.js?ver=3.37.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mailchimpSF = {"ajax_url":"http:\/\/blog.openplans.org\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://blog.openplans.org/wp-content/plugins/mailchimp/js/mailchimp.js?ver=1.4.1'></script>
+<script type='text/javascript' src='http://blog.openplans.org/wp-includes/js/jquery/ui/core.min.js?ver=1.11.2'></script>
+<script type='text/javascript' src='http://blog.openplans.org/wp-content/plugins/mailchimp//js/datepicker.js?ver=4.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.openplans.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.openplans.org/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Watercooler: Beginning of August' href='http://blog.openplans.org/2012/08/watercooler-beginning-of-august/' />
+<link rel='next' title='Open Trip Planner Goes Production at TriMet' href='http://blog.openplans.org/2012/08/open-trip-planner-goes-production-at-trimet/' />
+<link rel='canonical' href='http://blog.openplans.org/2012/08/the-openplans-guide-to-gtfs-data/' />
+<link rel='shortlink' href='http://wp.me/p4kqPf-2U5' />
+	<script type="text/javascript">
+		jQuery(function($) {
+			$('.date-pick').each(function() {
+				var format = $(this).data('format') || 'mm/dd/yyyy';
+				format = format.replace(/yyyy/i, 'yy');
+				$(this).datepicker({
+					autoFocusNextInput: true,
+					constrainInput: false,
+					changeMonth: true,
+					changeYear: true,
+					beforeShow: function(input, inst) { $('#ui-datepicker-div').addClass('show'); },
+					dateFormat: format.toLowerCase(),
+				});
+			});
+			d = new Date();
+			$('.birthdate-pick').each(function() {
+				var format = $(this).data('format') || 'mm/dd';
+				format = format.replace(/yyyy/i, 'yy');
+				$(this).datepicker({
+					autoFocusNextInput: true,
+					constrainInput: false,
+					changeMonth: true,
+					changeYear: false,
+					minDate: new Date(d.getFullYear(), 1-1, 1),
+					maxDate: new Date(d.getFullYear(), 12-1, 31),
+					beforeShow: function(input, inst) { $('#ui-datepicker-div').removeClass('show'); },
+					dateFormat: format.toLowerCase(),
+				});
+
+			});
+
+		});
+	</script>
+	
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="The OpenPlans Guide to GTFS Data" />
+<meta property="og:url" content="http://blog.openplans.org/2012/08/the-openplans-guide-to-gtfs-data/" />
+<meta property="og:description" content="Data formatted using the General Transit Feed Specification (GTFS) runs practically every transit app out there. It fuels all kinds of products in our space from trip planners to transit-oriented a..." />
+<meta property="article:published_time" content="2012-08-02T22:00:35+00:00" />
+<meta property="article:modified_time" content="2014-09-15T21:21:00+00:00" />
+<meta property="article:author" content="http://blog.openplans.org/author/jameswong/" />
+<meta property="og:site_name" content="OpenPlans" />
+<meta property="og:image" content="http://blog.openplans.org/wp-content/uploads/2012/08/image30471-810x1024.png" />
+<meta property="og:image" content="http://blog.openplans.org/wp-content/uploads/2012/08/septa.png" />
+<meta property="og:image" content="http://blog.openplans.org/wp-content/uploads/2012/08/multiagency-828x1024.png" />
+<meta name="twitter:site" content="@jetpack" />
+<meta name="twitter:image" content="http://blog.openplans.org/wp-content/uploads/2012/08/image30471-810x1024.png?w=240" />
+<meta name="twitter:card" content="summary" />
+		<link rel="stylesheet" id="custom-css-css" type="text/css" href="http://blog.openplans.org/?custom-css=1&#038;csblog=1&#038;cscache=6&#038;csrev=5" />
+		
+  
+  
+  <!-- jQuery Tweet -->
+  <script src="http://blog.openplans.org/wp-content/themes/openplans-website/js/tweet/jquery.tweet.js"></script>
+  </head>
+
+<body class="single single-post postid-11165 single-format-standard">
+  <div id="page" class="hfeed">
+    <header id="branding" role="banner" class="clearfix">
+        <h1 id="site-title"><span><a href="http://openplans.org" title="OpenPlans" rel="home">OpenPlans</a></span></h1>
+        <div class="skip-link visuallyhidden"><a href="#content" title="Skip to content">Skip to content</a></div>
+        <a href="#" id="nav-bttn">&equiv;</a>
+        <nav id="access" role="article">
+          <div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-21330" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-21330"><a href="http://blog.openplans.org/" >All</a></li>
+<li id="menu-item-21325" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-21325"><a href="http://blog.openplans.org/category/happenings/" >Events</a></li>
+<li id="menu-item-21326" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-21326"><a href="http://blog.openplans.org/category/chatter/" >Chatter</a></li>
+<li id="menu-item-21328" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-21328"><a href="http://blog.openplans.org/category/people/" >People</a></li>
+<li id="menu-item-21327" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-21327"><a href="http://blog.openplans.org/category/shareabouts/" >Shareabouts</a></li>
+</ul></div>        </nav><!-- #access -->
+    </header><!-- #branding -->
+
+    <div id="main" class="clearfix">
+		<div id="primary">
+			<div id="content">
+
+			
+				<nav id="nav-above" role="article">
+					<div class="nav-previous"><a href="http://blog.openplans.org/2012/08/watercooler-beginning-of-august/" rel="prev"><span class="meta-nav">&larr;</span> Watercooler: Beginning of August</a></div>
+					<div class="nav-next"><a href="http://blog.openplans.org/2012/08/open-trip-planner-goes-production-at-trimet/" rel="next">Open Trip Planner Goes Production at TriMet <span class="meta-nav">&rarr;</span></a></div>
+				</nav><!-- #nav-above -->
+
+				<article id="post-11165" class="post-11165 post type-post status-publish format-standard hentry category-uncategorized" role="article">
+					<header class="entry-header">
+						<h1 class="entry-title">The OpenPlans Guide to GTFS Data</h1>
+
+						<div class="entry-meta">
+							<span class="meta-prep meta-prep-author">Posted on </span><a href="http://blog.openplans.org/2012/08/the-openplans-guide-to-gtfs-data/" rel="bookmark"><time class="entry-date" datetime="2012-08-02T18:00:35+00:00" pubdate>August 2, 2012</time></a> <span class="meta-sep"> by </span> <span class="author vcard"><a class="url fn n" href="http://blog.openplans.org/author/jameswong/" title="View all posts by jameswong">jameswong</a></span>						</div><!-- .entry-meta -->
+					</header><!-- .entry-header -->
+
+					<div class="entry-content clearfix">
+						<p>Data formatted using the General Transit Feed Specification (GTFS) runs practically every transit app out there. It fuels all kinds of products in our space from <a title="OpenTripPlanner" href="http://opentripplanner.org" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://opentripplanner.org']);" target="_blank">trip planners</a> to transit-oriented apartment <a title="Apartment Search w TransitScore" href="http://walk.sc/T20cKz" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://walk.sc']);" target="_blank">searches</a>. The folks at <a title="City-Go-Round" href="http://citygoround.org" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://citygoround.org']);">City-Go-Round</a> tell the story of open transit data pretty well &#8211; open transit data enables the transit apps that help people get around. But here&#039;s the next question: what else can we do with that data? We <a href="http://openplans.org/2012/07/17/in-public-transit-the-number-of-passenger-miles-served-by-agencies-with-open-data-has-skyrocketed/" >mentioned a few weeks ago</a> that it turns out that almost 85 percent of the transit miles traveled in the U.S. are done so on transit systems with open data. So let&#039;s talk about the tools that we could build to help out those transit agencies.</p>
+<p><strong><a href="http://blog.openplans.org/wp-content/uploads/2012/08/image30471.png" ><img title="image3047" src="http://blog.openplans.org/wp-content/uploads/2012/08/image30471-810x1024.png" alt="" width="480" height="606" /></a></strong></p>
+<h2>What&#039;s a GTFS?</h2>
+<p>GTFS is just a <a title="GTFS Description" href="https://developers.google.com/transit/gtfs/reference" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://developers.google.com']);" target="_blank">data format</a>. When data follows those guidelines, it&#039;s called a GTFS feed. GTFS feeds give you an incredible amount of information about a transit system&#039;s routes, stops, schedules, fares, transfers. The beauty of it is that it starts at the most disaggregated level (the arrival and departure time of every stop of every bus) and categorizes data upwards with a structure resembling a relational database with fields and rules to connect tables as primary and foreign keys would.  The highly refined data is needed for a trip planner that tells you exactly when to leave your house  to catch a bus. Hopefully the above infographic can help you if you&#039;re just starting with GTFS data.</p>
+<h2>How else can we use it?</h2>
+<p>Civic-minded programmers can build apps for more than just transit riders. As civic-minded programmers here at OpenPlans, that&#039;s just what we did. Over last two months, we were working on a project that I started as part of my intern experience called <a title="GTFS Explore Git" href="https://github.com/jcwong86/GTFS_Explore_Tool" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://github.com']);" target="_blank">GTFS Explore</a>. If you&#039;re involved in academia, as a consultant for transit agencies or like transit data, you&#039;ve probably heard of the Transit Capacity and Quality of Service Manual (<a href="http://www.trb.org/Main/Blurbs/153590.aspx" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.trb.org']);">TCQSM</a>). This hefty volume provides instructions on how to quantitatively review everything from the person-capacity of a rail transit line to the quality of a bus stop. The problem is that the data to run these analyses is often challenging to get to. As it turns out, GTFS feeds are actually a highly refined, full coverage, up-to-date source of data. Here are a few examples of the service coverage analyses you could run on any transit system&#039;s data.</p>
+<h3>System Level Analysis</h3>
+<p>By bringing GTFS into an actual database, we could use simple queries to find out what every headway is in a transit system. This seems trivial, but how would you do it without GTFS? A headway is the time between successive arrivals of a transit vehicle from one route at a specific stop. We averaged the headways throughout an entire day for each route-stop in a bus system leaving us with 44,800 data points. Imagine counting those off a PDF of the schedule.  Looking at a distribution of these, we can see some interesting characteristics. For one thing, there are very few stops where a route is average 10-minutes or less for most of the day. Two common values are between 15-20 minutes and 60 minutes, which makes sense when you think about how some routes offer hourly service all day and others might have a mix of half-hour and shorter headways during peaks.</p>
+<p><span style="color: #ff0000;"><strong><a href="http://blog.openplans.org/wp-content/uploads/2012/08/septa.png" ><img class="alignleft size-full wp-image-11203" title="septa" src="http://blog.openplans.org/wp-content/uploads/2012/08/septa.png" alt="" width="765" height="374" /></a><br />
+</strong></span></p>
+<p>One thing to keep in mind is the importance of your decisions about aggregation. As I mentioned, there are many ways to look at this data. Consider a route that runs buses every 15 minutes for two hours in the morning and two hours in the evening peak hours, but only hourly service for the rest of the day. An average headway would be 40 minutes which is pretty misleading since it&#039;s way worse than 15 minutes but better than 60 minutes. There&#039;s no easy answer when you&#039;re talking about boiling it down to one number. What would standard deviations do for us? Is it better to take median values? A warning: think hard about aggregation before boiling down your data. We never used to have data at this refined a level, so we have to be responsible with how we use it.</p>
+<h3>Multi-Agency Comparisons</h3>
+<p>I have a hunch that there won&#039;t be many agencies that use database queries for an introspective analysis of their own services. For one thing, many agencies have custom tools and custom data to do that on their own. But as a grad student, I am often curious about the comparison of agencies to one another and national trends. What are the longest bus routes in the U.S.? What agency has the best service frequencies? How does average stop spacing correlate with land use density? Is route directness a function of street-connectivity in suburban neighborhoods? GTFS is one component of these analyses that can be used to really speed up the process of gathering data from around the country.</p>
+<p>We wanted to show the power of batch processing and extrapolation of our methods with this next run. We took the idea of an average-agency headway (the average of all those 45k data points from above) for each of fifty large agencies and plotted them to spot trends by mode. Bus systems exhibit some of the longer headways, matched only by long-haul commuter rail systems. Metros/Subways all stay at or below 20 minute headways throughout the day, speaking to the service quality that is ensured with such high investment in the mode (you rarely see a city that has built a subway and doesn&#039;t run it with at least 20-minute headways). There&#039;s a LOT of data behind each of these graphics; this is a simple example that really doesn&#039;t do justice to the fidelity of the data used here.</p>
+<p><strong><span style="color: #ff0000;"><br />
+<a href="http://blog.openplans.org/wp-content/uploads/2012/08/multiagency.png" ><img class="size-large wp-image-11202 alignnone" title="multiagency" src="http://blog.openplans.org/wp-content/uploads/2012/08/multiagency-828x1024.png" alt="" width="600" height="742" /></a><br />
+</span></strong></p>
+<p>The method: a shell script ran each of the feeds through a set of tools (<a href="http://developer.onebusaway.org/modules/onebusaway-gtfs-modules/current-SNAPSHOT/onebusaway-gtfs-transformer-cli.html" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://developer.onebusaway.org']);" target="_blank">GTFS Transformer</a>, <a href="http://cbick.github.com/gtfs_SQL_importer/html/index.html" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://cbick.github.com']);" target="_blank">GTFS SQL Importer</a> and <a href="http://www.postgresql.org/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.postgresql.org']);" target="_blank">PostgreSQL</a>) to generate output files that we pulled together in <a href="http://www.r-project.org/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.r-project.org']);" target="_blank">R</a>. To do that fifty times with some of the largest agencies (NY, Chicago, Boston, LA etc) took 6 hours on a remote server with 15 GB of RAM.</p>
+<h2>Build this next:</h2>
+<p>This was just the beginning of the opportunities for using GTFS as an analytic tool. One idea I&#039;d like to see to life is an auto-generated infographic  that resembles the beauty of the <a href="http://data.fabernovel.com/nyc-subway/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://data.fabernovel.com']);" target="_blank">faberNovel infographic</a> on New York City transit ridership. It lets you click on any major city and generates the data summaries that you&#039;ve read about in the post along with other indicators. Maybe it runs a geographic analysis of transit accessible areas and shows you a shadow of the service area; maybe it it takes inspiration from the <a href="http://www.flickr.com/photos/walkingsf/sets/72157624812674967/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.flickr.com']);" target="_blank">race and ethnicity maps</a> by using census data;  perhaps it shows the foursquare places near the most popular stop in the system. There are many fun and helpful analytics that we can conceive using this data other than for transit trip planning.</p>
+<p>What are your ideas? What can you build with this?</p>
+											</div><!-- .entry-content -->
+
+					<footer class="entry-meta">
+						This entry was posted in <a href="http://blog.openplans.org/category/uncategorized/" rel="category tag">Uncategorized</a>. Bookmark the <a href="http://blog.openplans.org/2012/08/the-openplans-guide-to-gtfs-data/" title="Permalink to The OpenPlans Guide to GTFS Data" rel="bookmark">permalink</a>.
+											</footer><!-- .entry-meta -->
+				</article><!-- #post-11165 -->
+
+				<nav id="nav-below" role="article">
+					<div class="nav-previous"><a href="http://blog.openplans.org/2012/08/watercooler-beginning-of-august/" rel="prev"><span class="meta-nav">&larr;</span> Watercooler: Beginning of August</a></div>
+					<div class="nav-next"><a href="http://blog.openplans.org/2012/08/open-trip-planner-goes-production-at-trimet/" rel="next">Open Trip Planner Goes Production at TriMet <span class="meta-nav">&rarr;</span></a></div>
+				</nav><!-- #nav-below -->
+
+			
+			</div><!-- #content -->
+		</div><!-- #primary -->
+
+		<div id="secondary" class="widget-area">
+
+      
+			
+				<aside id="archives" class="widget" role="complementary">
+					<h2 class="widget-title">Archives</h2>
+					<ul>
+							<li><a href='http://blog.openplans.org/2014/12/'>December 2014</a></li>
+	<li><a href='http://blog.openplans.org/2014/11/'>November 2014</a></li>
+	<li><a href='http://blog.openplans.org/2014/10/'>October 2014</a></li>
+	<li><a href='http://blog.openplans.org/2014/09/'>September 2014</a></li>
+	<li><a href='http://blog.openplans.org/2014/08/'>August 2014</a></li>
+	<li><a href='http://blog.openplans.org/2014/07/'>July 2014</a></li>
+	<li><a href='http://blog.openplans.org/2014/06/'>June 2014</a></li>
+	<li><a href='http://blog.openplans.org/2014/05/'>May 2014</a></li>
+	<li><a href='http://blog.openplans.org/2014/04/'>April 2014</a></li>
+	<li><a href='http://blog.openplans.org/2014/03/'>March 2014</a></li>
+	<li><a href='http://blog.openplans.org/2014/02/'>February 2014</a></li>
+	<li><a href='http://blog.openplans.org/2014/01/'>January 2014</a></li>
+	<li><a href='http://blog.openplans.org/2013/12/'>December 2013</a></li>
+	<li><a href='http://blog.openplans.org/2013/11/'>November 2013</a></li>
+	<li><a href='http://blog.openplans.org/2013/10/'>October 2013</a></li>
+	<li><a href='http://blog.openplans.org/2013/09/'>September 2013</a></li>
+	<li><a href='http://blog.openplans.org/2013/08/'>August 2013</a></li>
+	<li><a href='http://blog.openplans.org/2013/07/'>July 2013</a></li>
+	<li><a href='http://blog.openplans.org/2013/06/'>June 2013</a></li>
+	<li><a href='http://blog.openplans.org/2013/05/'>May 2013</a></li>
+	<li><a href='http://blog.openplans.org/2013/04/'>April 2013</a></li>
+	<li><a href='http://blog.openplans.org/2013/03/'>March 2013</a></li>
+	<li><a href='http://blog.openplans.org/2013/02/'>February 2013</a></li>
+	<li><a href='http://blog.openplans.org/2013/01/'>January 2013</a></li>
+	<li><a href='http://blog.openplans.org/2012/12/'>December 2012</a></li>
+	<li><a href='http://blog.openplans.org/2012/11/'>November 2012</a></li>
+	<li><a href='http://blog.openplans.org/2012/10/'>October 2012</a></li>
+	<li><a href='http://blog.openplans.org/2012/09/'>September 2012</a></li>
+	<li><a href='http://blog.openplans.org/2012/08/'>August 2012</a></li>
+	<li><a href='http://blog.openplans.org/2012/07/'>July 2012</a></li>
+	<li><a href='http://blog.openplans.org/2012/06/'>June 2012</a></li>
+	<li><a href='http://blog.openplans.org/2012/05/'>May 2012</a></li>
+	<li><a href='http://blog.openplans.org/2012/04/'>April 2012</a></li>
+	<li><a href='http://blog.openplans.org/2012/03/'>March 2012</a></li>
+	<li><a href='http://blog.openplans.org/2012/02/'>February 2012</a></li>
+	<li><a href='http://blog.openplans.org/2012/01/'>January 2012</a></li>
+	<li><a href='http://blog.openplans.org/2011/12/'>December 2011</a></li>
+	<li><a href='http://blog.openplans.org/2011/11/'>November 2011</a></li>
+	<li><a href='http://blog.openplans.org/2011/10/'>October 2011</a></li>
+	<li><a href='http://blog.openplans.org/2011/09/'>September 2011</a></li>
+	<li><a href='http://blog.openplans.org/2011/08/'>August 2011</a></li>
+	<li><a href='http://blog.openplans.org/2011/07/'>July 2011</a></li>
+	<li><a href='http://blog.openplans.org/2011/06/'>June 2011</a></li>
+	<li><a href='http://blog.openplans.org/2011/05/'>May 2011</a></li>
+	<li><a href='http://blog.openplans.org/2011/04/'>April 2011</a></li>
+	<li><a href='http://blog.openplans.org/2011/03/'>March 2011</a></li>
+	<li><a href='http://blog.openplans.org/2011/02/'>February 2011</a></li>
+	<li><a href='http://blog.openplans.org/2011/01/'>January 2011</a></li>
+	<li><a href='http://blog.openplans.org/2010/11/'>November 2010</a></li>
+	<li><a href='http://blog.openplans.org/2010/10/'>October 2010</a></li>
+	<li><a href='http://blog.openplans.org/2010/09/'>September 2010</a></li>
+	<li><a href='http://blog.openplans.org/2010/08/'>August 2010</a></li>
+	<li><a href='http://blog.openplans.org/2010/07/'>July 2010</a></li>
+	<li><a href='http://blog.openplans.org/2010/06/'>June 2010</a></li>
+	<li><a href='http://blog.openplans.org/2010/05/'>May 2010</a></li>
+	<li><a href='http://blog.openplans.org/2010/04/'>April 2010</a></li>
+	<li><a href='http://blog.openplans.org/2010/03/'>March 2010</a></li>
+	<li><a href='http://blog.openplans.org/2010/02/'>February 2010</a></li>
+	<li><a href='http://blog.openplans.org/2010/01/'>January 2010</a></li>
+	<li><a href='http://blog.openplans.org/2009/12/'>December 2009</a></li>
+	<li><a href='http://blog.openplans.org/2009/11/'>November 2009</a></li>
+	<li><a href='http://blog.openplans.org/2009/10/'>October 2009</a></li>
+	<li><a href='http://blog.openplans.org/2009/09/'>September 2009</a></li>
+	<li><a href='http://blog.openplans.org/2009/08/'>August 2009</a></li>
+	<li><a href='http://blog.openplans.org/2009/07/'>July 2009</a></li>
+	<li><a href='http://blog.openplans.org/2009/06/'>June 2009</a></li>
+	<li><a href='http://blog.openplans.org/2009/05/'>May 2009</a></li>
+	<li><a href='http://blog.openplans.org/2009/04/'>April 2009</a></li>
+	<li><a href='http://blog.openplans.org/2009/03/'>March 2009</a></li>
+	<li><a href='http://blog.openplans.org/2009/02/'>February 2009</a></li>
+	<li><a href='http://blog.openplans.org/2009/01/'>January 2009</a></li>
+	<li><a href='http://blog.openplans.org/2008/11/'>November 2008</a></li>
+	<li><a href='http://blog.openplans.org/2008/10/'>October 2008</a></li>
+	<li><a href='http://blog.openplans.org/2008/07/'>July 2008</a></li>
+	<li><a href='http://blog.openplans.org/2008/06/'>June 2008</a></li>
+	<li><a href='http://blog.openplans.org/2008/03/'>March 2008</a></li>
+					</ul>
+				</aside>
+
+			
+			<aside class="widget" role="complementary">
+        <div id="openplans-tweets" class="sidebar">
+          <a class="twitter-timeline" href="https://twitter.com/OpenPlans" data-widget-id="346643096420904960">Tweets by @OpenPlans</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+      </aside>
+
+		</div><!-- #secondary .widget-area -->
+	</div><!-- #main  -->
+</div><!-- #page -->
+
+<script type="text/javascript">
+  jQuery(function ($) {
+    $(document).ready(function() {
+
+      // ----- Mobile Menu Button -----
+      $('#nav-bttn').click(function(e){
+        $('#access').toggleClass('expose');
+        e.preventDefault()
+      });
+
+
+      // ----- After The More Text -----
+      $('#after-the-more').hide();
+      $('#after-the-more:not(:empty)').before('<p><a href="#" id="after-the-more-link" class="more-link">Read more&hellip;</a></p>');
+      $('#after-the-more-link').click(function(e){
+        $('#after-the-more').slideToggle();
+        $('#after-the-more-link').parent('p').hide();
+        e.preventDefault()
+      });
+
+
+
+
+
+
+
+
+    });
+  });
+</script>
+
+	<div style="display:none">
+	</div>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201505'></script>
+<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?ver=2015Janaa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://blog.openplans.org/wp-content/plugins/jetpack/modules/wpgroho.js?ver=4.1'></script>
+
+	<script src="http://stats.wordpress.com/e-201505.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	st_go({v:'ext',j:'1:2.9.3',blog:'63975025',post:'11165',tz:'-5'});
+	var load_cmc = function(){linktracker_init(63975025,11165,2);};
+	if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+	else load_cmc();
+	</script>
+</body>
+</html>
